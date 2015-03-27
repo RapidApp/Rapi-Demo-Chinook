@@ -5,7 +5,7 @@ use warnings;
 
 # ABSTRACT: PSGI version of the Chinook demo
 
-use RapidApp 1.0203_02;
+use RapidApp 1.0204;
 
 use Moose;
 extends 'RapidApp::Builder';
