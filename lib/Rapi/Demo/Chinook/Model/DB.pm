@@ -10,7 +10,7 @@ __PACKAGE__->config(
     schema_class => 'Rapi::Demo::Chinook::DB',
     
     connect_info => {
-        dsn => 'dbi:SQLite:chinook.db',
+        dsn => 'dbi:SQLite:chinook.db', #<-- Note: this gets changed in Rapi::Demo::Chinook
         user => '',
         password => '',
         sqlite_unicode => q{1},
