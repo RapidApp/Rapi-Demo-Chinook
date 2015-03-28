@@ -103,6 +103,11 @@ Rapi::Demo::Chinook - PSGI version of the RapidApp "Chinook" demo
  # Plack/PSGI app:
  $app->to_app
 
+Or, from the command-line:
+
+ plackup -MRapi::Demo::Chinook -e 'Rapi::Demo::Chinook->new->to_app'
+
+
 =head1 DESCRIPTION
 
 This module is a simple L<Plack>/PSGI version of the L<RapidApp>/L<RapidDbic|Catalyst::Plugin::RapidApp::RapidDbic> 
