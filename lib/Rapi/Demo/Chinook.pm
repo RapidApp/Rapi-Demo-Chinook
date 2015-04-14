@@ -83,7 +83,10 @@ sub init_db {
   }
   
   print STDERR "Initializing $dst\n" if ($self->debug);
-  $src->copy_to( $dst );
+  #$src->copy_to( $dst );
+  # Create as new file instead of copying to avoid perm issues in a cross-platform manner:
+  # (also not bothering to do this in chunks because the file is smaller than 1M)
+  $dst->spew( scalar $src->slurp );
 }
 
 1;
