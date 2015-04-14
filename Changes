@@ -1,4 +1,8 @@
 Revision history for Rapi::Demo::Chinook
 
+1.01 2015-03-29
+    - Add command-line example to SYNOPSIS
+    - Remove rouge debug die that made it through by accident
+
 1.0 2015-03-28
     - First CPAN release

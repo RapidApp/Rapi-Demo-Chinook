@@ -18,7 +18,7 @@ use FindBin;
 use Path::Class qw(file dir);
 use Module::Runtime;
 
-our $VERSION = '1.0';
+our $VERSION = '1.01';
 
 has '+base_appname', default => sub { 'Rapi::Demo::Chinook::App' };
 has '+debug',        default => sub {1};
