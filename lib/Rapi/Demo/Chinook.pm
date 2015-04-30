@@ -5,7 +5,7 @@ use warnings;
 
 # ABSTRACT: PSGI version of the RapidApp "Chinook" demo
 
-use RapidApp 1.0204;
+use RapidApp 1.0303;
 
 use Moose;
 extends 'RapidApp::Builder';
@@ -18,7 +18,7 @@ use FindBin;
 use Path::Class qw(file dir);
 use Module::Runtime;
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 has '+base_appname', default => sub { 'Rapi::Demo::Chinook::App' };
 has '+debug',        default => sub {1};
